@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Gallary</title>
-        <!--CUSTOM CSS-->
-        <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<input type="radio" name="Photos" id="check1" checked>
-<input type="radio" name="Photos" id="check2">
-<input type="radio" name="Photos" id="check3">
-<input type="radio" name="Photos" id="check4">
-
 <div class="container">
-    <h1>ELITE PHOTO GALLARY</h1>
+    <h1>ELITE PHOTO GALLERY</h1>
     <div class="top-content">
-        <h3>Photo Gallary</h3>
-        <label for="check1">All Photos</label>
-        <label for="check2">Family Photos</label>
-        <label for="check3">Formula One</label>
-        <label for="check4">Nature</label>
+        <h3>Photo Gallery</h3>
+        <label data-filter="all">All Photos</label>
+        <label data-filter="family">Family Photos</label>
+        <label data-filter="racing">Formula One</label>
+        <label data-filter="nature">Nature</label>
     </div>
 
     <div class="photo-gallery">
@@ -81,5 +76,8 @@
         </div>
     </div>
 </div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
