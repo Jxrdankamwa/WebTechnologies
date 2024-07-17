@@ -129,16 +129,41 @@ label:hover{
     position: relative;
     transition: .5s;
 }
-
 #check2:checked ~ .container .photo-gallery .family{
-    transform: scale(1);
     opacity: 1;
+    transform: scale(1);
     position: relative;
     transition: .5s;
 }
-#check3:checked ~ .container .photo-gallery .racing,
+#check2:checked ~ .container .photo-gallery .racing,
+#check2:checked ~ .container .photo-gallery .nature{
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+#check3:checked ~ .container .photo-gallery .racing{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+#check3:checked ~ .container .photo-gallery .family,
+#check3:checked ~ .container .photo-gallery .nature{
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
 #check4:checked ~ .container .photo-gallery .nature{
-    opacity: 0;
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+#check4:checked ~ .container .photo-gallery .racing,
+#check4:checked ~ .container .photo-gallery .family{
+    opacity: 1;
     transform: scale(0);
     position: absolute;
     transition: .5s;
